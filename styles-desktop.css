@@ -1,0 +1,230 @@
+/* Style pour les écrans de bureau */
+@media screen and (min-width: 1025px) {
+
+  body {
+    display: grid;
+    font-family: garamond,Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5e4015ae;
+    filter: brightness(0.6);
+  }
+  .en-tete {
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+
+  /* Titre principal */
+  h1 {
+    font-size: 70px;
+    letter-spacing: 4px;
+    font-style: italic;
+    color: #001520;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  /* Boutons du menu de navigation */
+  .bouton {
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #015b17;
+    color: #fdfd96;
+    text-decoration: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    filter: brightness(1.2);
+    letter-spacing: 2px;
+  }
+  .bouton:hover {
+    background-color: #001520;
+  }
+
+  .menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .menu li {
+        margin: 0 15px;
+    }
+  /* Formulaire de recherche */
+  form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    width: 80%;
+    margin: 20px auto;
+    filter: brightness(1.2);
+  }
+   .search {
+    align-items: center;
+    width: 150px;
+    height: 25px;
+    border: 2px solid #4CAF50;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 25px;
+  }
+
+  .search:focus {
+    outline: none;
+    border-color: #2E8B57;
+    box-shadow: 0 0 5px #2E8B57;
+  }
+
+  .search::placeholder {
+    text-align: center;
+    color: #001520;
+    opacity: 0.7;
+    }
+
+  .depart {
+    position:absolute;
+    top: 50%;
+    left: 40px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+  }
+
+  .arrivee {
+    position:absolute;
+    top: 50%;
+    left: 250px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+  }
+  /*Nombre de passagers*/
+  .liste {
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    border: 2px solid #4CAF50;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 16px;
+    }
+  .liste:focus {
+    outline: none;
+    border-color: #2E8B57;
+    box-shadow: 0 0 5px #2E8B57;
+  }
+  .liste option {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fdfd96;
+    color: #001520;
+  }
+  /* Bouton de recherche */
+  .submit {
+    width: 150px;
+    height: 40px;
+    letter-spacing: 2px;
+    background-color: #6cc0d1;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .submit:hover {
+    background-color: #4b80ab;
+    color: #fdfd96;
+  }
+/* Section de bienvenue */
+h2{
+    font-size: 30px;
+    color: #001520;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.description {
+    font-size: 35px;
+    color: #001520;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+}
+/* Carousel d'images */
+.carousel {
+    overflow: hidden;
+    width: 400px;
+    height: 250px;
+    margin: 0px auto;
+    position: relative;
+   
+}
+.images {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide-animation 15s infinite;
+}
+
+.image {
+    width: 400px;
+    height: 250px;
+    flex-shrink: 0;
+}
+.image img {
+    min-width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+
+@keyframes slide-animation {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(0%); }
+    44.44% { transform: translateX(-33%); }
+    66.66% { transform: translateX(-33%); }
+    77.77% { transform: translateX(-66%); }
+    100% { transform: translateX(-66%); }
+}
+
+/* Pied de page */
+footer{
+    grid-column: 1/-1;
+    color: #001520;
+    background-color: #5e40157b;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  footer li {
+    margin: 0 15px;
+  }
+  footer a {
+    color: #001520;
+    text-decoration: none;
+  }
+}

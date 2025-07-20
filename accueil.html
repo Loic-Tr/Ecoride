@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+     <title>Ecoride</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="styles-mobile.css">
+	<link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1024px)" href="styles-tablette.css">
+	<link rel="stylesheet" media="screen and (min-width: 1025px)" href="styles-desktop.css">
+
+<body>
+    <!--En tête avec logo, titre et menu-->
+    <header class="en-tete">
+        <img src="C:\Users\33636\Desktop\STUDI\ECF\logov2.png" alt="Logo Ecoride" class="logo">
+        <h1>Ecoride</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="#Acceuil" class="bouton">Acceuil</a></li>
+                <li><a href="#Connexion" class="bouton">Connexion</a></li>
+                <li><a href="#Covoiturage" class="bouton">Covoiturage</a></li>
+                <li><a href="#Contact" class="bouton">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form> 
+        <!-- Formulaire de recherche -->
+        <input type="text" name="depart" class="search" placeholder="Départ">
+        <img src="C:\xampp\htdocs\ecoride\depart.png" alt="panneau de signalisation" class="depart">
+        <input type="text" name="destination" class="search" placeholder="Destination">
+        <img src="C:\xampp\htdocs\ecoride\destination.png" alt="drapeau d'arrivée" class="arrivee">
+        <input type="date" name="date" class="search" placeholder="Date">
+        <select type="list" name="passager" class="liste">
+            <option value="" disabled selected>Nombre de passagers</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        <input type="submit" name="submit" class="submit" value="Rechercher">
+    </form>
+
+    <section id="Bienvenue">
+        <!-- Section de bienvenue, présentation de l'entreprise et de ses valeurs -->
+        <h2>Bienvenue sur Ecoride</h2>
+        <p class="description">Votre plateforme de covoiturage engagée à vous proposer des itinéraires les plus verts possible. Le covoiturage c'est économique, convivial et surtout écologique.
+        <br><br>Rejoignez une communauté engagée qui fait rimer mobilité avec responsabilité.</p>
+    </section>
+    <!-- Carousel d'images de covoiturage -->
+    <div class="carousel">
+        <div class="images">
+            <div class="image">
+                <img src="c:\xampp\htdocs\ecoride\image1.png" alt="Image de covoiturage">
+            </div>
+            <div class="image">
+                <img src="c:\xampp\htdocs\ecoride\image2.png" alt="Image de covoiturage">
+            </div>
+            <div class="image">
+                <img src="c:\xampp\htdocs\ecoride\image3.png" alt="Image de covoiturage">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Pied de page avec informations de contact et mentions légales -->
+        <ul>
+            <li><a href="#Mail">Mail</a></li>
+            <li><a href="#Mentions légales">Mentions légales</a></li>
+            <li>&copy; 2025 Ecoride. Tous droits réservés.</li>
+        </ul>
+    </footer>
+</body>
+</html>
