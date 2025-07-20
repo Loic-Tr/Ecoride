@@ -5,7 +5,7 @@ Pour déployer le site web en local suivez les étapes:
 
 1 installation de Xampp
 
-2 mettre le dossier "ecoride" dans le chemin suivant: C:\xampp\htdocs
+2 mettre les fichiers dans un dossier "ecoride" dans le chemin suivant: C:\xampp\htdocs
 
 3 ouvrir Xampp control panel
 
